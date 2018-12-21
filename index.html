@@ -65,24 +65,29 @@
 						<p>
 							and who is ahead of the game
 						</p>
-						<html><body><?php
-							//*mail form* /
-							$to = "kc2suave@gmail.com"; /*add your email */
-							$Subject = "Email from website"; /*what subject you want to receive from your website*/
-							
-							$name = $_POST ['name'];
-							$email = $_POST ['email'];
-							$comment = $_POST ['comment'];
-							
-							$headers .= "Content-type: text/html;\r\n";
-							$headers .= "From: $email";
-							
-							mail($to, $Subject, $comment, $headers);
-							echo "Thank you $name";
-							?>
-							 </body></html>
 					</header>
 				</section>
+				<html>
+							<head>
+									<meta charset="utf-8">
+									<title>Voting Form</title>
+							</head>
+								<body>
+									<main>
+										<p>Submit your vote
+											<form class="contact-from" action="contactform.php" method="post">
+												<input type="text" name="name" placeholder=""Full name">
+												<input type="text" name="mail" placeholder="Your email">
+												<input type="text" name="subject" placeholder="subject">
+												<textarea name="message" placeholder="Message"></textarea>
+												<button type="submit" name="submit">Send Mail</button>
+
+											</form>
+										</p>
+									</main>
+								</body>
+							<head>
+						</html>
 
 			<!-- Carousel -->
 				<section class="carousel">
