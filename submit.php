@@ -2,7 +2,7 @@
 <?php
 if (isset($_POST['submit'])){
     $name = $_POST['name'];
-    $Subject = $_POST['subject'];
+    $subject = $_POST['subject'];
     $mailfrom = $_POST['name'];
     $message = $_POST['message'];
 
