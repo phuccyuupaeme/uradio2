@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: url("/assets/images/will.jpg") no-repeat;
+  background: url("assets/images/will.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
