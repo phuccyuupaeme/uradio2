@@ -1,29 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+<head> 
+	<meta charset="UTF-8">
 <title>Kc2Suave</title>
-<meta charset="UTF-8" 
-<head>
+	 
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/Users/wf053936/Documents/website/uradio2-gh-pages/homepage.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/enter.css" /> 
 </head>
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index2.html" class="w3-bar-item w3-button w3-padding-large">Website</a>
-    <a href="radio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Radio</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Merchandise</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="photos.html" class="w3-bar-item w3-button">Photos</a>
-        <a href="videos.html" class="w3-bar-item w3-button">Videos</a>
-        <a href="privacypolicy.html" class="w3-bar-item w3-button">Privacy Policy</a>
-      </div>
-    </div>
+
+<html>
 
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 width="600px" height="100px" viewBox="0 0 600 100">
@@ -33,7 +20,7 @@
 
 	text {
 		filter: url(#filter);
-		fill: white;
+		fill: black;
     	font-family: 'Share Tech Mono', sans-serif;
     	font-size: 100px;
 		-webkit-font-smoothing: antialiased;
@@ -44,9 +31,9 @@
 	<defs>
 
 		<filter id="filter">
-		    <feFlood flood-color="black" result="black" />
+		    <feFlood flood-color="red" result="red" />
 		    <feFlood flood-color="red" result="flood1" />
-		    <feFlood flood-color="limegreen" result="flood2" />
+		    <feFlood flood-color="green" result="flood2" />
 			<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
 			<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
 			<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
@@ -83,7 +70,7 @@
  			
 
  			<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
-				<feMergeNode in = "black" />
+				<feMergeNode in = "#" />
 				<feMergeNode in = "comp2" />
 				<feMergeNode in = "off2b" />
 
@@ -122,4 +109,36 @@
 	<text x="0" y="100">KC2Suave</text>
 </g>
 </svg>
+ 
+
+<section class="buttons">
+    <h1></h1>
+  <div class="container">
+    
+    <a href="index2.html" class="btn btn-1">
+      <svg>
+        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+      </svg>
+     Website
+    </a>
+    <!--svg hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110 -->
+    <!--End of Buttowean 1 -->
+
+    <a  href="radio.html" class="btn btn-2">Radio</a> 
+    <!--End of Button 2 -->
+    
+    <a href="https://www.instagram.com/ijw2live/" class="btn btn-3">BTS</a> 
+    <!--End of Button 3 -->
+    
+    <a href="#" class="btn btn-4"><span>Merchandise</span></a> 
+    <!--End of Button 4 -->
+    
+    <a href="https://twitter.com/ijw2live" class="btn btn-5">News</a> 
+    <!--End of Button 5 -->
+    
+    
+  </div>
+  <p>Follow on <a href="https://twitter.com/ijw2live" target="_blank">Twitter</a></p>
+</section>
+	
 </html>
