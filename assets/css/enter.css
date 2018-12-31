@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background: #E1332D;
+  background: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -146,6 +146,7 @@ p a:hover {
   background: rgba(225, 51, 45, 0);
   font-weight: 900;
   letter-spacing: 1px;
+  color: green;
 }
 .btn-1:hover rect {
   stroke-width: 5;
@@ -161,6 +162,7 @@ p a:hover {
 .btn-2:hover,
 .btn-2:active {
   letter-spacing: 5px;
+  color: gold;
 }
 
 .btn-2:after,
@@ -175,6 +177,7 @@ p a:hover {
   position: relative;
   transition: all 280ms ease-in-out;
   width: 0;
+  
 }
 
 .btn-2:hover:after,
@@ -205,7 +208,7 @@ p a:hover {
   background: #e02c26;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
-  color: #ec817d;
+  color: #0E2597;
   text-decoration: none;
   text-shadow: -1px -1px 0 #c2211c;
   transition: all 250ms linear;
@@ -215,6 +218,7 @@ p a:hover {
   border: 1px solid;
   overflow: hidden;
   position: relative;
+  
 }
 .btn-4 span {
   z-index: 20;
@@ -235,13 +239,14 @@ p a:hover {
 }
 
 .btn-4:hover:after {
+  color: black;
   left: 120%;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .btn-5 {
-  border: 0 solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  border: 255 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 255);
   outline: 1px solid;
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
@@ -255,4 +260,5 @@ p a:hover {
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
+  color: silver;
 }
