@@ -14,20 +14,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<script>
-function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-  }
-}
-</script>
+	
             </head>
             
  <!--Menu Stylesheet -->
@@ -470,15 +457,10 @@ margin-left: 56px;top:3px;">
 
 
   <!-- About Section -->
-	
-<p>
-<a href="/images/me.jpg" download="BudgetPlan.xlsx">
-<button onclick="clickCounter()" href="/images/me.jpg" type="button">Click me!</button>
-<img src="/images/me.jpg"  width="104" height="142">
-</a></p>
-
-<div id="result"></div>
-<p>Click the photo or the button to download the BudgetPlan</p>
+	<a href="/images/me.jpg" download="BudgetPlan.xlsx">
+  <img src="/images/me.jpg"  width="104" height="142">
+</a>
+<p>Click the photo to download the BudgetPlan</p>
 
 	
     
