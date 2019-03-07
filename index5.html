@@ -1,647 +1,199 @@
 <!DOCTYPE html>
 <html>
-    	<head>
-                <title>Will-n-a-Mill</title>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-                <link rel="stylesheet" href="assets/css/main.css" />
-                <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-                <meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content=="IE=edge"/>
-<meta name="google" value="notranslate"/>
-<title>Side Menu</title>
-
-<link rel="stylesheet" type="text/css" href="css/menu.css">
-<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	
-            </head>
-            
- <!--Menu Stylesheet -->
- 
-            <style>
-            body
-                {
-  margin:0px;
-  padding:0px;
-	font-family: "Open Sans", arial;
-	color:black;
-	font-weight:300;
-                }
-
-
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-}
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
-
-.logo{
-  
-}
-
-.settings {
-  
-  height:73px; 
-  float:left;
-  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
-  background-repeat:no-repeat;
-  width:250px;
-  margin:0px;
- text-align: center;
-font-size:20px;
-font-family: 'Strait', sans-serif;
-
-}
-
-
-
-
-
-
-/* ScrolBar  */
-.scrollbar
-{
-
-height: 90%;
-width: 100%;
-overflow-y: hidden;
-overflow-x: hidden;
-}
-
-.scrollbar:hover
-{
-
-height: 90%;
-width: 100%;
-overflow-y: scroll;
-overflow-x: hidden;
-}
-
-/* Scrollbar Style */ 
-
-
-
-#style-1::-webkit-scrollbar-track
-{
-border-radius: 2px;
-}
-
-#style-1::-webkit-scrollbar
-{
-width: 5px;
-background-color: transparent;
-}
-
-#style-1::-webkit-scrollbar-thumb
-{
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-background-color: transparent;
-}
-/* Scrollbar End */ 
-
-
-
-
-.fa-lg {
-font-size: 1em;
-  
-}
-.fa {
-position: relative;
-display: table-cell;
-width: 55px;
-height: 36px;
-text-align: center;
-top:12px; 
-font-size:20px;
-
-}
-
-
-
-.main-menu:hover, nav.main-menu.expanded {
-width:250px;
-overflow:hidden;
-opacity:1;
-
-}
-
-.main-menu {
-background:transparent;
-position:absolute;
-top:0;
-bottom:0;
-height:100%;
-left:0;
-width:55px;
-overflow:hidden;
--webkit-transition:width .2s linear;
-transition:width .2s linear;
--webkit-transform:translateZ(0) scale(1,1);
-box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
-  opacity:1;
-}
-
-.main-menu>ul {
-margin:7px 0;
-
-}
-
-.main-menu li {
-position:relative;
-display:block;
-width:250px;
-  
-
-
-}
-
-.main-menu li>a {
-position:relative;
-width:255px;
-display:table;
-border-collapse:collapse;
-border-spacing:0;
-color:white;
-font-size: 13px;
-text-decoration:none;
--webkit-transform:translateZ(0) scale(1,1);
--webkit-transition:all .14s linear;
-transition:all .14s linear;
-font-family: 'Strait', sans-serif;
-
-
-text-shadow: 1px 1px 1px  #fff;  
-}
-
-
-
-.main-menu .nav-icon {
-  
-position:relative;
-display:table-cell;
-width:55px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:18px;
-
-}
-
-.main-menu .nav-text  {
-   
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:190px;
-font-family: 'Titillium Web', sans-serif;
-}
-
-.main-menu .share {
-}
-
-
-
-.main-menu .fb-like {
-
-left: 180px;
-position:absolute;
-top: 15px;
-}
-
-.main-menu>ul.logout {
-position:absolute;
-left:0;
-bottom:0;
-  
-}
-
-.no-touch .scrollable.hover {
-overflow-y:hidden;
-
-}
-
-.no-touch .scrollable.hover:hover {
-overflow-y:auto;
-overflow:visible;
-  
-}
-
-
-/* Logo Hover Property */
-
-
-.settings:hover, settings:focus {   
-  background:url( https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
-  -webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
--moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
--o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0; 
-}
-
-.settings:active, settings:focus {   
-  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
-  -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
--moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
--o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0; 
-}
-
-
-a:hover,a:focus {
-text-decoration:none;
-border-left:0px solid #F7F7F7;
-
-
-
-}
-
-nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
-  
-}
-
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
-text-transform: uppercase;
-}
-
-
-
-
-/* Darker element side menu Start*/
-
-
-.darkerli
-{
-background-color:transparent;
-text-transform:capitalize;  
-}
-
-.darkerlishadow
-{
-background-color:#ededed;
-text-transform:capitalize;  
--webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
--moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
-box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
-}
-
-
-.darkerlishadowdown
-{
-background-color:black;
-text-transform:capitalize;  
--webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
--moz-box-shadow:    inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
-box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
-}
-
-/* Darker element side menu End*/
-
-
-
-
-.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:gold;
-background-color:transparent;
-text-shadow: 0px 0px 0px; 
-}
-.area {
-float: left;
-background: transparent;
-width: 100%;
-height: 100%;
-}
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
-</style>
-
-
-            
-<title>KC2Suave</title>
+        <img src="assets/images/tshirt1.png" alt="Trulli" width="500" height="333">
+        <img src="assets/images/tshirt2.png" alt="Trulli" width="500" height="333">
+        <img src="assets/images/tshirt3.png" alt="Trulli" width="500" height="333">
+        <img src="assets/images/logo1.png" alt="Trulli" width="500" height="333">
+        <img src="assets/images/logo2.png" alt="Trulli" width="500" height="333">
+<title>Merchandise</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("assets/images/will.jpg");
+  min-height: 90%;
+}
 </style>
-<body class="w3-black">
+<body>
 
-
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Will-n-a-Million </h1>
-    <p>Beat Maker and Videographer</p>
-    <html>
-            <body>
-                <script src="//myradiostream.com/embed/thesewerline"></script>
-            </body>
-        </html>
-  </header>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index2.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="radio.html" class="w3-bar-item w3-button">RADIO</a>
+    <a href="photos.html" class="w3-bar-item w3-button">PHOTOS</a>
+    <a href="videos.html" class="w3-bar-item w3-button">VIDEOS</a>
+  </div>
+</div>
   
-  <!-- Nav Bar -->
-  
-  <body>
-</div><nav class="main-menu">
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Online store open 24/7</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">thin<br>CRUST PIZZA</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Merchandise</a></p>
+  </div>
+</header>
 
-
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
   
- <div>
-    <a class="logo" href="http://startific.com">
-    </a> 
-  </div> 
-<div class="settings"></div>
-<div class="scrollbar" id="style-1">
-      
-<ul>
-  
-<li>                                   
-<a href="index.html">
-<i class="fa fa-home fa-lg"></i>
-<span class="nav-text">Home</span>
-</a>
-</li>   
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Photos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Videos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Coding</div>
+      </a>
+    </div>
 
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Photography Rate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$75 Hourly</span></h1>
+      <p class="w3-text-grey">Includes sd card with raw images.   5 images are added to portfolio for production.  Photos include, family photos, weddings, selfies or whatever type of photo you may need. (does not include editing)</p>
+      <hr>
    
-<li>                                 
-<a href="#about">
-<i class="fa fa-user fa-lg"></i>
-<span class="nav-text">About</span>
-</a>
-</li>
-
-<li>                                   
-<a href="photos.html">
-<i class="fa fa-picture-o fa-lg"></i>
-<span class="nav-text">Photos</span>
-</a>
-</li> 
-
-<li>                                   
-<a href="videos.html">
-<i class="fa fa-desktop fa-lg"></i>
-<span class="nav-text">Videos</span>
-</a>
-</li> 
-  
-<li>
-<a href="http://startific.com">
-<i class="fa fa-heart-o fa-lg"></i>
-                        
-<span class="share"> 
-
-
-<div class="addthis_default_style addthis_32x32_style">
-  
-<div style="position:absolute;
-margin-left: 56px;top:3px;"> 
-     
-
-
-<a href="https://www.youtube.com/channel/UCUtxYhKiRJYogR6e445nlWQ?view_as=subscriber" target="_blank" class=""><img src="http://icons.iconarchive.com/icons/graphics-vibe/neon-glow-social/128/youtube-icon.png" width="30px" height="30px"></a>  
-
-<a href="https://www.facebook.com/profile.php?id=100012343172899" target="_blank" class=""><img src="http://icons.iconarchive.com/icons/graphics-vibe/hot-burning-social/128/facebook-icon.png" width="30px" height="30px"></a>  
-
-
-  
-  
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ff17589278d8b3a"></script>
-                       
-                            
-                              
-                            
-                          
-                        </span>
-             
-                        
-                    </a>
-
-</li>
-                            
-</li>  
-</ul>
-        </nav>
-        </body>
-        
-  
-
-			
-  
-  
-
-
-
-  <!-- About Section -->
-	<a href="/images/me.jpg" download="BudgetPlan.xlsx">
-  <img src="/images/me.jpg"  width="104" height="142">
-</a>
-<p>Click the photo to download the BudgetPlan</p>
-
-<p><a href="https://ascendweb.jacksongov.org/ascend/(01bcga551adwen45fpacva55)/search.aspx"><h2>Online Propery Search</h2></a></p>
-	
-	<p><a href="https://health.mo.gov/safety/medical-marijuana/pdf/580-3245-fillable.pdf"><h2>Medical Marijuana Application</h2></a></p>
-	
-	<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Journey with the Cloud...(to be cont.)</h2>
-    <hr style="width:200px" class="w3-opacity">
-		    
-		    
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <img src="images/bgi.jpg" class="center" width="1080" height="333">
-    <h2 class="w3-text-light-grey">Why Adobe</h2>
-    <hr style="width:200px" class="w3-opacity">
-	  
-<p>While on the market to pick up a new hobby, I somehow got the bright idea to purchase a new camera FZ2500 by Panasonic and after doing so, I realized, this is only about 25% of the equipment I need.  I spent countless hours searching for the right software program that would fit all my needs, sufficient enough to keep up with industry standards but not cost an arm and a leg if you know what I mean.  Long story short, I chose Adobe Creative Cloud.  The price was unbeatable (student discount price), the learning curve was very achievable, and last, Adobe's compatibility across platforms and other software programs is astounding. </p>
-	  <p>Three reasons why I will be using Adobe now and in the distant future</p>
-	  
-	  <br>*Ease of use
-	  <br>*Price
-	  <br>*Quality
-		  </br>
-	
-	  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Why FL Studio</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Before I begin, let me say "Why not FL Studio"?  No but seriously, FL Studio is the most user friendly, very compatible beat making software that I have ever come across and I have used many different ones, such as Reasons, Pro-Tools, and CoolEdit Pro just to name a few.  I first began with FL Studio a few years back (I don’t remember the version, but at this time, 99% of plugins were free).  If you’re a first timer, or looking to start a new hobby, or just want to have some fun, FL Studio is where it’s at, hands down.  My current setup consists of an MPC5000, FLStudio (latest version) and a Roland F6.  FLStudio is my main brain, the MPC is my drum machine and of course the Roland F6 is my keyboard for natural sounds.  </p>
-	  
-          <p>Three reasons why I will NEVER stop using FLStudio</p>
-	  <br>Not sure if this is true or not, but it seems as if every other music production software uses the basis of FLStudio, meaning if you can work FLStudio, you can work them all.
-	  <br>
-          <br>*Versitility
-	  <br>*Compatibility
-	</br>
-	
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">FL Studio</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Adobe</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
-    </div>
-    <p class="w3-wide">Coding</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">0+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">4+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">4+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">0+</span><br>
-        Meetings
-      </div>
-    </div>
-    
-    </div>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="#" alt="#" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Testimonials</span>"My video could not of come out better"</p>
-    <p>"amazing work, with amazing prices"</p><br>
-    
-    <img src="#" alt="#" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">"I would definately recommend this company"</span> "great work"</p>
-    <p>"No one is better than Will-n-a-Million"</p>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <!-- Carousel -->
-    <section class="carousel">
-            <div class="reel">
-				
-				<article>
-                    <a href="https://www.youtube.com/watch?v=mj9H6nYpzXQ" class="image featured"><img src="images/P1030094.JPG" alt="" /></a>
-                </article>
-
-                <article>
-                    <a href="https://www.youtube.com/watch?v=mj9H6nYpzXQ" class="image featured"><img src="images/P1030094.JPG" alt="" /></a>
-                </article>
-
-                <article>
-                    <a href="https://www.youtube.com/watch?v=yzAQWNKFjmI&t=" class="image featured"><img src="images/sewerlineimage.jpg" alt="" /></a>
-
-                </article>
-
-                <article>
-                    <a href="https://www.youtube.com/watch?v=-UvV3QkNm2o" class="image featured"><img src="images/luni.jpg" alt="" /></a>
-				</article>
-                </div>
-                </section>
+      <h1><b>Editing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$150 Hourly</span></h1>
+      <p class="w3-text-grey">Includes SD card with all raw footage.  Does not include editing files.  (If the use of other software is required, such as Adobe Aftereffects, editing is an additional $50 per hour.  (each hour of shooting is equal to one hour of editing)</p>
+      <hr>
       
-	  <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-      </div>
+      <h1><b>Beats</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$50 each</span></h1>
+      <p class="w3-text-grey">Mid-West and West-Coast Style . (primarily heavy bass with 808's and synthesizers).  Tune into the broadcast for previews</p>
+      <hr>
 
-      <div class="w3-half">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+      <h1><b>Coding Start Ups</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$150 Per Consultation</span></h1>
+      <p class="w3-text-grey">Contact for details</p>
+      <hr>
+
+      <h1><b>More To Come</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$</span></h1>
+      <p class="w3-text-grey">:)</p>
+      <hr>
+
+      <h1><b>More To Come</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$</span></h1>
+      <p class="w3-text-grey">:)</p>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Videography</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$250 Hourly</span></h1>
+      <p class="w3-text-grey">For every 1 minute of shooting, there is 1 hour of expected editing. Includes weddings, personal videos</p>
+      <hr>
+   
+      
+      <h1><b>Promo Video</b><span class="w3-tag w3-red w3-round">Hot!</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$250 Hourly</span></h1>
+      <p class="w3-text-grey">There is a minimum of 1.5 hours of editing for each 1 minute of shooting.  </p>
+      <hr>
+      
+            <h1><b>Editing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$150 Hourly</span></h1>
+      <p class="w3-text-grey">Adobe Photoshop, Adobe After Effects, Adobe Illistrator</p>
+      <hr>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Missouri, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: contact for info</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:kc2suave@gmail.com</p>
+      <h1><b>More To Come</b><span class="w3-tag w3-grey w3-round">New</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$</span></h1>
+      <p class="w3-text-grey">:)</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Website Start Up</b> <span class="w3-tag w3-grey w3-round">NEW</span><span class="w3-right w3-tag w3-dark-grey w3-round">$150</span></h1>
+      <p class="w3-text-grey">This includes the purchase of your DNS and Domain Name (https://yourwebsite.com)</p>
+      <hr>
+   
+      <h1><b>Retro Pi Startup</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$75</span></h1>
+      <p class="w3-text-grey">Here we ask for a small donation due to all merchandise being offered through 3rd party and other free software.  This package includes many retro video games from consoles such as Nintendo, Super Nintendo, Sega, N64, and Playstation</p>
+      <hr>
+      
+      <h1><b>More to Come</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$</span></h1>
+      <p class="w3-text-grey">:)</p>
+      <hr>
+      
+      <h1><b>More to Come</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$</span></h1>
+      <p class="w3-text-grey">:)</p>
     </div><br>
-    <p>Hit me up for inquires!! Text, call or email:</p>
 
-    <form action="/contact.php" method="post" target="_blank">
-        <body> 
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="name" required name="name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="email" required name="email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-  
-    </body>
-    </form>
-  <!-- End Contact Section -->
   </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <a <i href="https://twitter.com/Ijw2live" class="fa fa-twitter w3-hover-opacity"></i> </a>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Brought to you by <a href="https://www.facebook.com/ijw2live" target="_blank" class="w3-hover-text-green">Will Franklin</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
 </div>
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.onvisible.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
 
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>This page was created to include a simple price listing.  If there is anything you do not understand or if you need any assistance, do not hesitate to email us at kc2suave@gmail.com</p>
+    <p><strong>The Mastermind?</strong> Mr. Will Franklin<img src="images/will.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are a very proud company</p>
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Operation Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue Website Updates</p>
+        <p>Wednesday Enhancing Coding Techniques</p>
+        <p>Thursday Consulting</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday Customer Contact</p>
+        <p>Saturday Music Production</p>
+        <p>Sunday Photoshoots</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <!--<p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Will Franklin</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
-</html> 
+</html>
