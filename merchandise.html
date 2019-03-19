@@ -6,6 +6,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
+#myDIV {
+
+  
+  transform: rotateY(0deg); /* Standard syntax */
+  width: 500px;
+  height: 100px;
+  -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  50% {font-size: 40px;}
+}
 body, html {height: 100%}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .menu {display: none}
@@ -34,9 +48,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     <span class="w3-tag w3-xlarge">Online store open 24/7</span>
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white w3-hide-small" style="font-size:100px">thin<br>CRUST PIZZA</span>
-    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
-    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Merchandise</a></p>
+    
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="images/tshirt1.png" style="width:100%">
+      <img class="mySlides" src="images/tshirt2.png" style="width:100%">
+      <img class="mySlides" src="images/tshirt3.png" style="width:100%">
+    
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </body>
+    <!--T-shirt slide show script-->
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    <div id="myDIV" <a href="#menu" class="w3-button w3-xxlarge w3-black">Merchandise</a>
   </div>
 </header>
 
@@ -169,7 +211,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Will Franklin</a></p>
+  <p>Powered by <a href="https://twitter.com/Ijw2live" title="W3.CSS" target="_blank" class="w3-hover-text-green">Will Franklin</a></p>
 </footer>
 
 <script>
